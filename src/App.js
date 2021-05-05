@@ -17,6 +17,7 @@ function App() {
 
     if (_token) {
       setToken(_token);
+      spotify.setAccessToken(_token);
     }
     console.log("This is my token 👉 ", token);
   }, []);
