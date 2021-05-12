@@ -5,12 +5,24 @@ import SkipPreviousIcon from "@material-ui/icons/SkipPrevious";
 import SkipNextIcon from "@material-ui/icons/SkipNext";
 import ShuffleIcon from "@material-ui/icons/Shuffle";
 import RepeatIcon from "@material-ui/icons/Repeat";
+import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
+import VolumeDownIcon from "@material-ui/icons/VolumeDown";
+
+import { Grid, Slider } from "@material-ui/core";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="footer__left">
-        <p>Album and song details</p>
+        <img
+          className="footer__albumLogo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTra6EGemOIT48QW7nADEIPVFxzbbBkcsvj2j8_xwiKL57xfSduNbkrmIHgWvJ3hiVts6s&usqp=CAU"
+          alt="You got it bad album cover"
+        />
+        <div className="footer__songInfo">
+          <h4>Yeah!</h4>
+          <p>User</p>
+        </div>
       </div>
       <div className="footer__center">
         <ShuffleIcon className="footer__green" />
@@ -19,8 +31,19 @@ function Footer() {
         <SkipNextIcon className="footer__icon" />
         <RepeatIcon className="footer__green" />
       </div>
-      <div className="footer__right"></div>
-      <p>Volume controls</p>
+      <div className="footer__right">
+        <Grid container spaceing={2}>
+          <Grid item>
+            <PlaylistPlayIcon />
+          </Grid>
+          <Grid item>
+            <VolumeDownIcon />
+          </Grid>
+          <Grid item xs>
+            <Slider aria-labelleby="conitinuous-slide" />
+          </Grid>
+        </Grid>
+      </div>
     </div>
   );
 }
