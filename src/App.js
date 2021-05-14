@@ -37,14 +37,18 @@ function App() {
           playlists: playlists,
         });
       });
+      spotify.getPlaylist("37i9dQZEVXcLSABVpUZbau").then((response) => {
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          discover_weekly: response,
+        });
+      });
     }
-    
   }, []);
 
   return (
     <div className="app">
       {token ? <Player spotify={spotify} /> : <Login />}
-      {/* {} */}
     </div>
   );
 }
