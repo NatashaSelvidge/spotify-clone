@@ -1,4 +1,5 @@
-![Screen Shot 2021-06-14 at 3 12 21 PM](https://user-images.githubusercontent.com/17371250/121966171-05376d00-cd23-11eb-84cc-70d6ae3be015.png)
+![Screen Shot 2021-06-14 at 3 14 43 PM](https://user-images.githubusercontent.com/17371250/121966334-50518000-cd23-11eb-815e-8e67c484eec3.png)
+
 
 
 The spotify clone allows users to login with their personal spotify account and play music from their favorite playlist.
